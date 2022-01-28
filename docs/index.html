@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="reveal.js/dist/reset.css">
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="reveal.js/dist/theme/black.css" id="theme">
-  <link rel="stylesheet" href="css/custom.css">
+
 
   <!-- Theme used for syntax highlighted code -->
   <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -76,27 +78,254 @@
       <section>
         <h2>El problema</h2>
       </section>
+
       <section>
-        <h2>Gestión de cambios en un proyecto</h2>
+        <h2>Gestión de cambios en un proyecto 1/2</h2>
 
         <ul>
-          <li>Solución 0: no hacer ninguna gestión (versión única)</li>
-          <li>Solución 1: ñapa rudimentaria (copias manuales) ##img##</li>
-          <li>Solución 2: VCS tradicionales: RCS, CVS, Subversion
+          <li class="fragment">Solución 0: no hacer ninguna gestión (versión única)</li>
+          <li class="fragment">Solución 1: ñapa rudimentaria (copias manuales)
+            <div class="img"><img class="img-center" src="img/proyecto_copias.png" /></div>
+          </li>
+      </section>
+
+      <section>
+        <h2>Gestión de cambios en un proyecto 2/2</h2>
+        <ul>
+          <li class="fragment">Solución 2: VCS tradicionales: RCS, CVS, Subversion
             <ul>
               <li>Conexión con repositorio central para todo</li>
             </ul>
           </li>
-          <li>Solución 3: DVCS: Bazaar, Mercurial, Git
+          <li class="fragment">Solución 3: DVCS: Bazaar, Mercurial, Git
             <ul>
               <li>Autonomía y flexibilidad</li>
               <li>Commits locales</li>
             </ul>
           </li>
         </ul>
-
       </section>
 
+      <section>
+        <h2>Terminología 1/2</h2>
+        <ul>
+          <li class="fragment">Repositorio: Almacén local o remoto en donde se ecuentra un proyecto que está bajo
+            control de versiones.
+            <ul>
+              <li>Va cambiando con el tiempo -> Versión</li>
+              <li>Se conserva un histórico de todas las versiones acteriores</li>
+            </ul>
+          </li>
+          <li class="fragment">Commit: Conjunto de cambios en un repositorio entre dos versiones
+            <ul>
+              <li>A veces también se le puede llamar parche (patch)</li>
+            </ul>
+          </li>
+      </section>
+
+      <section>
+        <h2>Terminología 2/2</h2>
+        <ul>
+          <li class="fragment">Working tree - Untracked area
+            <ul>
+              <li>La zona donde se trabaja, antes de "git add"</li>
+            </ul>
+          </li>
+          <li class="fragment">Index - Staging area
+            <ul>
+              <li>Despues de "git add", pero antes de "git commit"</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Diferencias entre ficheros (consola)</h2>
+        <div class="img">
+          <img class="img-center" src="img/diff_console.png" width="700px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Diferencias entre ficheros (IDE)</h2>
+        <div class="img">
+          <img class="img-center" src="img/diff_vscodium.png" width="850px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>VCS vs DVCS 1/2</h2>
+        <div class="img">
+          <img class="img-center" src="img/vcs.png" width="550px" />
+        </div>
+        <img src="img/dvcs.png" width="400px">
+        <img src="img/dvcs2.png" width="400px">
+      </section>
+
+      <section>
+        <h2>VCS vs DVCS 2/2</h2>
+        <div class="img">
+          <img class="img-center" src="img/svn-layout.png" width="700px" />
+        </div>
+        <div class="img">
+          <img class="img-center" src="img/git-layout-remote.png" width="700px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Flujo de trabajo con Git 1</h2>
+        <div class="img">
+          <img class="img-center" src="img/git-detailed-1.png" width="500px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Flujo de trabajo con Git 2</h2>
+        <div class="img">
+          <img class="img-center" src="img/git-detailed-2.png" width="500px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Flujo de trabajo con Git 3</h2>
+        <div class="img">
+          <img class="img-center" src="img/git-detailed-3.png" width="500px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Flujo de trabajo con Git 4</h2>
+        <div class="img">
+          <img class="img-center" src="img/git-detailed-4.png" width="500px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Flujo de trabajo con Git 5</h2>
+        <div class="img">
+          <img class="img-center" src="img/git-detailed-5.png" width=" 500px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Flujo de trabajo con Git 6</h2>
+        <div class="img">
+          <img class="img-center" src="img/git-detailed-6.png" width="500px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Flujo de trabajo con Git 7</h2>
+        <div class="img">
+          <img class="img-center" src="img/git-detailed-7.png" width="500px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Flujo de trabajo con Git 8</h2>
+        <div class="img">
+          <img class="img-center" src="img/git-detailed-8.png" width="500px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Flujo de trabajo con Git 9</h2>
+        <div class="img">
+          <img class="img-center" src="img/git-detailed-9.png" width="500px" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Comandos básicos de Git</h2>
+        <ul>
+          <li><span class="command">git init:</span> <span class="desc">Inicializa el directorio para trabajar con
+              git</span></li>
+          <li><span class="command">git clone &lt;URL&gt;:</span> <span class="desc">Clona el repositorio remoto de
+              la URL</span></li>
+          <li><span class="command">git add:</span> <span class="desc">Agrega cambios del <em>Working tree</em> al
+              <em>Index</em></span></li>
+          <li><span class="command">git commit:</span> <span class="desc">Consolida cambios del <em>Index</em> y
+              creamos un nuevo commit</span></li>
+          <li><span class="command">git diff:</span> <span class="desc">Muestra cambios entre <em>Working Tree</em> y el
+              <em>Index</em></span></li>
+          <li><span class="command">git show &lt;commit&gt;:</span> <span class="desc">Muestra el commit
+              <em>commit</em></span></li>
+          <li><span class="command">git log:</span> <span class="desc">Muestra la historia de commits desde
+              <em>HEAD</em></span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Más comandos de Git</h2>
+        <ul>
+          <li><span class="command">git status:</span> <span class="desc">Muestra el estado del <em>Working Tree</em> y
+              del <em>Index</em></span></li>
+          <li><span class="command">git rm &lt;fichero&gt;:</span> <span class="desc">Borra el fichero y prepara los
+              cambios para el commit en el <em>Index</em></span></li>
+          <li><span class="command">git mv &lt;ficheroA&gt; &lt;ficheroB&gt;:</span> <span class="desc">Renombramos
+              <em>ficheroA</em> como <em>ficheroB</em> y prepara los cambios para el commit</span></li>
+          <li><span class="command">git push:</span> <span class="desc">Envía los cambios locales a un repositorio
+              remoto</span></li>
+          <li><span class="command">git pull:</span> <span class="desc">Trae los cambios de un repositorio remoto al
+              local</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Ejemplos</h2>
+      </section>
+
+      <section>
+        <h2>Creación de un proyecto de cero en GitHub</h2>
+        <p><a href="https://github.com/">GitHub</a></p>
+      </section>
+
+      <section>
+        <h2>Licencias de software</h2>
+        <ul>
+          <li>Licencias de Software Libre</li>
+          <li>Licencias de Software Abierto</li>
+          <li>Licencias de Software Propietario/Privativo</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Software Libre</h2>
+        <h3 class="fragment">(4 libertades)</h3>
+        <ol class="fragment" start="0">
+          <li>Usar para cualquier proposito</li>
+          <li>Ver el código fuente y modificarlo</li>
+          <li>Distribuir copias</li>
+          <li>Modificar el software y distribuir las modificaciones</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Licencias</h2>
+      </section>
+
+      <section>
+        <h2>Copyleft</h2>
+        <h4>GPL</h4>
+        <h4>AGPL</h4>
+        <h4>EUPL</h4>
+        <h4>...</h4>
+      </section>
+
+      <section>
+        <h2>Copyleft suave</h2>
+        <h4>LGPL (Lesser General Public License)</h4>
+        <h4>MPL (Mozilla Public License)</h4>
+        <h4>...</h4>
+      </section>
+
+      <section>
+        <h2>Permisivas - sin copyleft</h2>
+        <h4>BSD</h4>
+        <h4>Apache</h4>
+        <h4>MIT/Expat</h4>
+        <h4>...</h4>
+      </section>
 
       <section id="contraPortada">
         <h2>Introducción a <em>Git</em> y <em>GitHub</em></h2>

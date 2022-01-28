@@ -1,0 +1,14 @@
+.img .img-center {
+  display: block;
+  margin: auto;
+}
+.img{
+  padding: 5px;
+}
+.command{
+  font-family: monospace;
+  font-size: 0.9em;
+}
+.desc{
+  font-size: 0.7em;
+}
