@@ -4,10 +4,15 @@
 }
 .img{
   padding: 5px;
+  background-color: white;
 }
 .command{
   font-family: monospace;
   font-size: 0.9em;
+}
+.command-br{
+  font-family: monospace;
+  font-size: 0.8em;
 }
 .desc{
   font-size: 0.7em;
