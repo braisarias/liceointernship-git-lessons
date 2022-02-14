@@ -330,6 +330,114 @@
       </section>
 
       <section>
+        <h2>Chuleta</h2>
+        <h3>Inicialización repositorio</h3>
+      </section>
+
+      <section>
+        <h3>Opción 1</h3>
+        <h4>Repositorio vacio en local - 1/3</h4>
+        <p class="desc">Iniciamos un repositorio en local y lo vinculamos con uno remoto.</p>
+        <ol>
+          <li><span class="command">git init</span> <br />
+            <span class="desc">Se inicia repositorio local en el directorio actual</span>
+          </li>
+          <li><span class="command">git remote add &lt;alias&gt; &lt;URL&gt;</span> <br />
+            <span class="desc">Vinculamos con el repositorio remoto de la URL usando el alias</span>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h3>Opción 1</h3>
+        <h4>Repositorio vacio en local - 2/3</h4>
+        <p class="desc">Hacemos el primer commit.</p>
+        <ol start="4">
+          <li><span class="command">echo &quot;#Mi proyecto de GitHub&quot; &gt; README.md</span> <br />
+            <span class="desc">Creamos el fichero de README (podemos agregar más texto)</span>
+          </li>
+          <li><span class="command">git add README.md</span> <br />
+            <span class="desc">Marcamos el fichero README.md como cambio listo para commit</span>
+          </li>
+          <li><span class="command">git commit -m &quot;Agregado readme&quot;</span> <br />
+            <span class="desc">Confirmamos los cambios con un commit</span>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h3>Opción 1</h3>
+        <h4>Repositorio vacio en local - 3/3</h4>
+        <p class="desc">Subimos los cambios al repositorio remoto.</p>
+        <li><span class="command">git branch -M main</span> <br />
+          <span class="desc">Cambiamos el nombre de la rama a <em>main</em></span>
+        </li>
+        <li><span class="command">git push -u origin main</span> <br />
+          <span class="desc">Subimos los cambios de la rama al repositorio remoto <em>origin</em> estableciendo la
+            rama remota con el nombre <em>main</em></span>
+        </li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>Opción 2</h3>
+        <h4>Repositorio remoto inicializado - 1</h4>
+        <p class="desc">Creamos un repositorio en GitHub ya con README.md y .gitignore.</p>
+        <img src="img/github-create-repo.png" width="400px" />
+      </section>
+
+      <section>
+        <h3>Opción 2</h3>
+        <h4>Repositorio remoto inicializado - 2</h4>
+        <p class="desc">Copiamos la URL para clonar el repositorio.</p>
+        <img src="img/github-clone-repo.png" width="800px" />
+      </section>
+
+
+      <section>
+        <h3>Opción 2</h3>
+        <h4>Repositorio remoto inicializado - 3</h4>
+        <p class="desc">Clonamos el repositorio remoto en local.</p>
+        <ol>
+          <li><span class="command">git clone &lt;URL&gt;</span> <br />
+            <span class="desc">Clonamos el repositorio con la URL que copiamos en GitHub (creará una carpeta con el
+              nombre del repositorio)</span>
+          </li>
+          <li><span class="command">cd &lt;nombre repo&gt;</span> <br />
+            <span class="desc">Entramos en la carpeta del proyecto</span>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>A trabajar!</h2>
+        <p>Con nuestro repositorio inicializado (de cualquiera de las 2 formas) ya podemos trabajar.</p>
+      </section>
+
+      <section>
+        <h2>Chuleta</h2>
+        <h3>Flujo de trabajo</h3>
+      </section>
+
+      <section>
+        <h3>Chuleta</h3>
+        <h4>Flujo de trabajo</h4>
+        <p class="desc">Trabajamos en el directorio de nuestro proyecto</p>
+        <ol>
+          <li><span class="command">git status</span> <br />
+            <span class="desc">Vemos el estado general de nuestro repositorio</span>
+          </li>
+          <li><span class="command">git add &lt;fichero(s)&gt;</span> <br />
+            <span class="desc">Agregamos los ficheros de los que queremos confirmar los cambios</span>
+          </li>
+          <li><span class="command">git commit -m "Mensaje de commit"</span> <br />
+            <span class="desc">Consolidamos los cambios</span>
+          </li>
+          <li><span class="command">git push</span> <br />
+            <span class="desc">Subimos los cambios al repositorio remoto</span>
+          </li>
+        </ol>
+      </section>
+
+      <section>
         <h2>Más cosas de Git:</h2>
         <h3>Ramas</h3>
       </section>
